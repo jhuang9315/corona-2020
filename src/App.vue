@@ -1,28 +1,62 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header/>
+    <Intro/>
+    <CoronaDeaths/>
+    <CoronaNews/>
+    <End/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+import Header from './components/Header.vue'
+import Intro from './components/Intro'
+import CoronaDeaths from './components/CoronaDeaths'
+import CoronaNews from './components/CornaNews'
+import End from './components/End'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Header,
+    Intro,
+    CoronaDeaths,
+    CoronaNews,
+    End,
+    Footer
+  },
 }
 </script>
 
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font: sans-serif, Helvetica, Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #8BD8BD; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #243665; 
+}
+
 </style>
