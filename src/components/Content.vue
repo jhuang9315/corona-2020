@@ -2,7 +2,7 @@
   <div class="container-fluid newsCards">
     <div class="row flex-row flex-nowrap" >
       <div class="Card-Cols col-5 align-self-center" v-for="content in content" v-bind:key="content.title">
-          <div class ="card border-light" style="height:20rem">
+          <div class ="card border-light" style="height:23rem">
             <img class ="card-img-top" :src="content.urlToImage">
             <div class ="card-body shadow-sm">
                 <p class="card-text">{{content.title}}</p>
